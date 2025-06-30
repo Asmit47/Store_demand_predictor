@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Demand Prediction</title>
+</head>
+<body>
+    <h1>Store Demand Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="store_id">Store ID:</label>
+        <select name="store_id" required>
+            <option value="S001">Store S001</option>
+            <option value="S002">Store S002</option>
+            <option value="S003">Store S003</option>
+            <option value="S004">Store S004</option>
+            <option value="S005">Store S005</option>
+        </select><br>
+        <label for="product_id">Product ID:</label>
+        <select name="product_id" required>
+            <option value="P001">Product P001</option>
+            <option value="P002">Product P002</option>
+            <option value="P003">Product P003</option>
+            <option value="P004">Product P004</option>
+            <option value="P005">Product P005</option>
+            <option value="P006">Product P006</option>
+            <option value="P007">Product P007</option>
+            <option value="P008">Product P008</option>
+            <option value="P009">Product P009</option>
+            <option value="P010">Product P010</option>
+            <option value="P011">Product P011</option>
+            <option value="P012">Product P012</option>
+            <option value="P013">Product P013</option>
+            <option value="P014">Product P014</option>
+            <option value="P015">Product P015</option>
+            <option value="P016">Product P016</option>
+            <option value="P017">Product P017</option>
+            <option value="P018">Product P018</option>
+            <option value="P019">Product P019</option>
+            <option value="P020">Product P020</option>
+        </select><br>
+        <label for="units_sold">Units Sold:</label>
+        <input type="number" step="any" name="units_sold" required><br>
+        <label for="units_ordered">Units Ordered:</label>
+        <input type="number" step="any" name="units_ordered" required><br>
+        <label for="price">Price:</label>
+        <input type="number" step="any" name="price" required><br>
+        <label for="discount">Discount:</label>
+        <input type="number" step="any" name="discount" required><br>
+        <label for="promotion">Promotion:</label>
+        <input type="number" step="any" name="promotion" required><br>
+        <label for="competitor_pricing">Competitor Pricing:</label>
+        <input type="number" step="any" name="competitor_pricing" required><br>
+        <label for="month">Month:</label>
+        <input type="number" step="any" name="month" required><br>
+        <label for="day">Day:</label>
+        <input type="number" step="any" name="day" required><br>
+        <label for="seasonality">Seasonality:</label>
+        <select name="seasonality" required>
+            <option value="Autumn">Autumn</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Winter">Winter</option>
+        </select><br>
+        <label for="weather_condition">Weather Condition:</label>
+        <select name="weather_condition" required>
+            <option value="Cloudy">Cloudy</option>
+            <option value="Rainy">Rainy</option>
+            <option value="Snowy">Snowy</option>
+            <option value="Sunny">Sunny</option>
+        </select><br>
+        <label for="region">Region:</label>
+        <select name="region" required>
+            <option value="East">East</option>
+            <option value="North">North</option>
+            <option value="South">South</option>
+            <option value="West">West</option>
+        </select><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
